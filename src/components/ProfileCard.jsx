@@ -4,7 +4,7 @@ const ProfileCard = ({ profile }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="border p-4 rounded-lg shadow-md" onClick={() => navigate(`/profile/${profile.id}`)}>
+    <div className="border p-4 rounded-lg shadow-md" >
       <img src={profile.photo} alt={profile.name} className="w-24 h-24 rounded-full mx-auto" />
       <h3 className="text-lg font-bold mt-2">{profile.name}</h3>
       <p className="text-sm text-gray-600">{profile.description}</p>
